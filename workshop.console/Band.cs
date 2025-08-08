@@ -17,5 +17,7 @@ namespace workshop.console
             _members = members;
         }
         public List<Person> Members { get { return _members; } }
+        public int BandNetWorth { get { return _members.Sum(person => person.NetWorth); } }
+        public string Name { get { return _name; } }
     }
 }
